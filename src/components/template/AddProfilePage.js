@@ -29,7 +29,7 @@ function AddProfilePage({ data }) {
 
   useEffect(() => {
     if (data) setProfileData(data);
-  }, []);
+  }, [data]);
 
   const editHandler = async () => {
     setIsLoading(true);

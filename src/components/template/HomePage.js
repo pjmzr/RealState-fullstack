@@ -21,8 +21,8 @@ function HomePage() {
         </div>
       </div>
       <div className={styles.categories}>
-        {Object.keys(categories).map((i) => (
-          <CategoryCard title={categories[i]} name={i} />
+        {Object.keys(categories).map((i, index) => (
+          <CategoryCard key={index} title={categories[i]} name={i} />
         ))}
       </div>
       <div className={styles.city}>
